@@ -16,11 +16,7 @@ export default function App() {
     y: -sapc([0, 0, 0], col.rgb()),
     color: col.hex()
   }));
-  console.log(
-    sortBy(data2, "x")
-      .map(({ x, y }) => [x, y].join(","))
-      .join("\n")
-  );
+  // console.log(sortBy(data2, "x").map(({ x, y }) => [x, y].join(",")).join("\n"));
   const fit1 = times(200).map(i => {
     const x = i / 2;
     return { x, y: Math.pow((x + 16) / 116, 3) };
